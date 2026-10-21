@@ -1,0 +1,16 @@
+library(readxl)
+library(dplyr)
+library(tidyr)
+library(openxlsx)
+library(readr)
+library(vroom)
+library(data.table)
+library(writexl)
+library(styler)
+
+
+setwd("C:\\SOL BACKUP\\Escritorio\\Historial de matrículas")
+getwd()
+list.files()
+mi_data <- vroom("ingresante_2025.csv", delim = "|")
+names(mi_data)
